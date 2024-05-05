@@ -1,0 +1,10 @@
+blink1
+clipman
+google-chrome
+ncpamixer
+sway-screenshot
+swaylock-effects
+termite
+visual-studio-code-bin
+wob
+yay-bin
