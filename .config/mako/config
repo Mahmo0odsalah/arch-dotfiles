@@ -1,0 +1,5 @@
+default-timeout=5000
+ignore-timeout=1
+anchor=top-left
+height=200
+width=500

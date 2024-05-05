@@ -1,0 +1,9 @@
+indicator
+clock
+daemonize
+ignore-empty-password
+image=/home/mahmood/Downloads/bg2.jpg
+show-failed-attempts
+indicator-caps-lock
+indicator-radius=100
+indicator-idle-visible
