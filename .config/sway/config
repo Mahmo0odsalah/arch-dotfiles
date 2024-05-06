@@ -1,3 +1,8 @@
+# Clipman:
+exec wl-paste -p -t text --watch clipman store -P --max-items=1000
+exec wl-paste -p -t text --watch clipman store -P --histpath="/home/mahmood/.local/share/clipman-primary.json"
+exec clipman restore
+
 # Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
@@ -232,7 +237,8 @@ bindsym $mod+Control+Shift+Up move workspace to output up
 
 # Swaync keybindings:
 bindsym $mod+shift+r exec swaync-client -t
-bindsym $mod+shift+w exec swaync-client --hide-latest
+#bindsym $mod+shift+w exec swaync-client --hide-latest
+bindsym $mod+shift+w exec swaync-client -C
 
 # Screenshot:
 bindsym $mod+shift+s exec sway-screenshot -m region --clipboard-only
@@ -258,10 +264,8 @@ exec swayidle -w \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
          before-sleep 'swaylock'
 
-exec wl-paste -p -t text --watch clipman store --no-persist
-#exec wl-paste -p -t text --watch clipman store --no-persist -P --histpath="~/.local/share/clipman-primary.json"
-exec clipman restore
 
 exec waybar
-exec swaync 
+exec swaync
+exec copyq 
 include /etc/sway/config.d/*
