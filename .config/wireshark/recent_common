@@ -1,0 +1,112 @@
+# Common recent settings file for Wireshark 4.2.4.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /home/mahmood/Downloads/test.pcap
+recent.capture_file: /home/mahmood/Downloads/export_1397a63213cecbe72f6214e824871804@172.31.14.231_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/export_2a76a6577aceeea86d49e2a6135a8499@10.66.5.78_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/export_1b11d2d470d2f36803b0d72f130f453d@10.66.5.78_5060.pcap
+
+######## Recent capture filters (latest first), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 0
+gui.geometry_main_y: 0
+gui.geometry_main_width: 849
+gui.geometry_main_height: 1026
+
+# Main window maximized.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_main_maximized: FALSE
+
+# Leftalign Action Buttons.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_leftalign_actions: FALSE
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# WLAN statistics upper pane size.
+# Decimal number.
+gui.geometry_status_wlan_stats_pane: 200
+
+# Warn if running with elevated permissions (e.g. as root).
+# TRUE or FALSE (case-insensitive).
+privs.warn_if_elevated: TRUE
+
+# Warn if Wireshark is unable to capture.
+# TRUE or FALSE (case-insensitive).
+sys.warn_if_no_capture: TRUE
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# TRUE or FALSE (case-insensitive).
+gui.search_case_sensitive: FALSE
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of SequenceDialog window.
+# Decimal integers.
+gui.geom.SequenceDialog.x: 0
+gui.geom.SequenceDialog.y: 0
+gui.geom.SequenceDialog.width: 2560
+gui.geom.SequenceDialog.height: 1080
+# TRUE or FALSE (case-insensitive).
+gui.geom.SequenceDialog.maximized: TRUE
+
+# Geometry and maximized state of RtpStreamDialog window.
+# Decimal integers.
+gui.geom.RtpStreamDialog.x: 0
+gui.geom.RtpStreamDialog.y: 1080
+gui.geom.RtpStreamDialog.width: 380
+gui.geom.RtpStreamDialog.height: 1004
+# TRUE or FALSE (case-insensitive).
+gui.geom.RtpStreamDialog.maximized: FALSE
+
+# Geometry and maximized state of VoipCallsDialog window.
+# Decimal integers.
+gui.geom.VoipCallsDialog.x: 952
+gui.geom.VoipCallsDialog.y: 0
+gui.geom.VoipCallsDialog.width: 636
+gui.geom.VoipCallsDialog.height: 1026
+# TRUE or FALSE (case-insensitive).
+gui.geom.VoipCallsDialog.maximized: FALSE
+
+# Geometry and maximized state of RtpPlayerDialog window.
+# Decimal integers.
+gui.geom.RtpPlayerDialog.x: 0
+gui.geom.RtpPlayerDialog.y: 1080
+gui.geom.RtpPlayerDialog.width: 1920
+gui.geom.RtpPlayerDialog.height: 1080
+# TRUE or FALSE (case-insensitive).
+gui.geom.RtpPlayerDialog.maximized: TRUE
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"

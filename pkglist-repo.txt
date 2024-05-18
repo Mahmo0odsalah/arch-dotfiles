@@ -9,8 +9,10 @@ brightnessctl
 dmenu
 efibootmgr
 git
+gnu-netcat
 gnumeric
 grub
+htop
 libva-mesa-driver
 linux
 linux-firmware
@@ -22,6 +24,7 @@ networkmanager
 nm-connection-editor
 noto-fonts-emoji
 otf-font-awesome
+pavucontrol
 pipewire
 pipewire-media-session
 pulseaudio
@@ -31,6 +34,8 @@ python-ipympl
 python-pandas
 python-pandas-datareader
 python-requests
+qt5-wayland
+qt6-wayland
 qtile
 sudo
 sway
@@ -39,9 +44,12 @@ swayidle
 swaync
 texinfo
 ttf-font-awesome
+ufw
 vim
+vlc
 waybar
 wget
+wireshark-qt
 wlroots
 wmenu
 wofi
@@ -51,3 +59,4 @@ xdg-desktop-portal-wlr
 xf86-video-amdgpu
 xorg-server
 zsh
+zssh

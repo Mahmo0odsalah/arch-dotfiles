@@ -1,7 +1,10 @@
+asterisk
 blink1
 clipman
 google-chrome
 ncpamixer
+pjsua
+sngrep
 sway-screenshot
 swaylock-effects
 termite
