@@ -1,4 +1,3 @@
-
 [Default Applications]
 text/html=google-chrome.desktop
 x-scheme-handler/http=google-chrome.desktop
@@ -7,3 +6,7 @@ x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 x-scheme-handler/mailto=google-chrome.desktop
 x-scheme-handler/webcal=google-chrome.desktop
+image/vnd.microsoft.icon=google-chrome.desktop
+
+[Added Associations]
+image/vnd.microsoft.icon=google-chrome.desktop;

@@ -13,8 +13,7 @@
         "sway/scratchpad",
     ],
     "modules-center": [
-	"clock",
-        "sway/window",
+	"clock"
     ],
     "modules-right": [
         "mpd",
@@ -110,7 +109,8 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "wdisplays"
     },
     "battery": {
         "states": {
@@ -149,7 +149,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"on-click": "nm-connection-editor"
+	"on-click": "nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

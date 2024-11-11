@@ -1,4 +1,4 @@
-# Common recent settings file for Wireshark 4.2.4.
+# Common recent settings file for Wireshark 4.4.1.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -6,46 +6,64 @@
 
 ######## Recent capture files (latest last), cannot be altered through command line ########
 
-recent.capture_file: /home/mahmood/Downloads/test.pcap
-recent.capture_file: /home/mahmood/Downloads/export_1397a63213cecbe72f6214e824871804@172.31.14.231_5060.pcap
-recent.capture_file: /home/mahmood/Downloads/export_2a76a6577aceeea86d49e2a6135a8499@10.66.5.78_5060.pcap
-recent.capture_file: /home/mahmood/Downloads/export_1b11d2d470d2f36803b0d72f130f453d@10.66.5.78_5060.pcap
+recent.capture_file: /home/mahmood/mahmood.pcap
+recent.capture_file: /home/mahmood/tcp.pcap
+recent.capture_file: /home/mahmood/000349-966534892894-966115079586-03aa2080613ce4b949941d932bc38714@172.31.35.175_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/092045-966115107056-966530175342-69e25f5f6eb8878f2524d8cd223612ca@172.31.43.54_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/call_7a7196ef076b6d8f148c169b4fd08f5a@172.31.12.178_5060.pcap
+recent.capture_file: /home/mahmood/tcpdumps/capture.pcap
+recent.capture_file: /home/mahmood/pcaps/110118-97148369598-60515966501246545-2095e7ad6be5ea92029083b00524035a@3.69.71.188_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/call_754a21b37cca6a93484217581bd2aa17@172.31.4.246_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/export_4678503c594ea38f5b97020d3060b1ce@172.31.36.227_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/export_4678503c594ea38f5b97020d3060b1ce@172.31.36.227_5060 (1).pcap
 
 ######## Recent capture filters (latest first), cannot be altered through command line ########
 
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) and websocket 
+recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) and (websocket || tcp)
+recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) and websocket
+recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) && websocket
+recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56)
+recent.display_filter: tcp.port != 22 and tcp and ip.src == 18.192.127.56
+recent.display_filter: tcp.port != 22 and tcp
+recent.display_filter: ip.addr == 18.185.130.152
 
 # Main window geometry.
 # Decimal numbers.
 gui.geometry_main_x: 0
-gui.geometry_main_y: 0
-gui.geometry_main_width: 849
-gui.geometry_main_height: 1026
+gui.geometry_main_y: 1080
+gui.geometry_main_width: 956
+gui.geometry_main_height: 1025
 
 # Main window maximized.
-# TRUE or FALSE (case-insensitive).
-gui.geometry_main_maximized: FALSE
+# true or false (case-insensitive).
+gui.geometry_main_maximized: false
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb000300000000000000000438000003bb000008380000000000000438000003bb00000838000000000000000007800000000000000438000003bb00000838
 
 # Leftalign Action Buttons.
-# TRUE or FALSE (case-insensitive).
-gui.geometry_leftalign_actions: FALSE
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
 
 # Last used Configuration Profile.
 gui.last_used_profile: Default
 
-# WLAN statistics upper pane size.
-# Decimal number.
-gui.geometry_status_wlan_stats_pane: 200
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
 
 # Warn if running with elevated permissions (e.g. as root).
-# TRUE or FALSE (case-insensitive).
-privs.warn_if_elevated: TRUE
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
 
 # Warn if Wireshark is unable to capture.
-# TRUE or FALSE (case-insensitive).
-sys.warn_if_no_capture: TRUE
+# true or false (case-insensitive).
+sys.warn_if_no_capture: true
 
 # Find packet search in.
 # One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
@@ -56,8 +74,16 @@ gui.search_in: PACKET_LIST
 gui.search_char_set: NARROW_AND_WIDE
 
 # Find packet case sensitive search.
-# TRUE or FALSE (case-insensitive).
-gui.search_case_sensitive: FALSE
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: false
 
 # Find packet search type.
 # One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
@@ -66,38 +92,68 @@ gui.search_type: DISPLAY_FILTER
 # Geometry and maximized state of SequenceDialog window.
 # Decimal integers.
 gui.geom.SequenceDialog.x: 0
-gui.geom.SequenceDialog.y: 0
-gui.geom.SequenceDialog.width: 2560
-gui.geom.SequenceDialog.height: 1080
-# TRUE or FALSE (case-insensitive).
-gui.geom.SequenceDialog.maximized: TRUE
+gui.geom.SequenceDialog.y: 1080
+gui.geom.SequenceDialog.width: 1916
+gui.geom.SequenceDialog.height: 1025
+# true or false (case-insensitive).
+gui.geom.SequenceDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.SequenceDialog.qt_geometry: 01d9d0cb0003000000000000000004380000077b0000083800000000000004380000077b000008380000000000000000078000000000000004380000077b00000838
+
+# Geometry and maximized state of ManageInterfacesDialog window.
+# Decimal integers.
+gui.geom.ManageInterfacesDialog.x: 0
+gui.geom.ManageInterfacesDialog.y: 0
+gui.geom.ManageInterfacesDialog.width: 508
+gui.geom.ManageInterfacesDialog.height: 1025
+# true or false (case-insensitive).
+gui.geom.ManageInterfacesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ManageInterfacesDialog.qt_geometry: 01d9d0cb000300000000000000000000000001fb000004000000000000000000000001fb0000040000000001000000000a000000000000000000000001fb00000400
 
 # Geometry and maximized state of RtpStreamDialog window.
 # Decimal integers.
 gui.geom.RtpStreamDialog.x: 0
-gui.geom.RtpStreamDialog.y: 1080
-gui.geom.RtpStreamDialog.width: 380
-gui.geom.RtpStreamDialog.height: 1004
-# TRUE or FALSE (case-insensitive).
-gui.geom.RtpStreamDialog.maximized: FALSE
+gui.geom.RtpStreamDialog.y: 0
+gui.geom.RtpStreamDialog.width: 636
+gui.geom.RtpStreamDialog.height: 1025
+# true or false (case-insensitive).
+gui.geom.RtpStreamDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.RtpStreamDialog.qt_geometry: 01d9d0cb0003000000000000000000000000027b0000040000000000000000000000027b0000040000000001000000000a0000000000000000000000027b00000400
 
 # Geometry and maximized state of VoipCallsDialog window.
 # Decimal integers.
-gui.geom.VoipCallsDialog.x: 952
+gui.geom.VoipCallsDialog.x: 0
 gui.geom.VoipCallsDialog.y: 0
 gui.geom.VoipCallsDialog.width: 636
-gui.geom.VoipCallsDialog.height: 1026
-# TRUE or FALSE (case-insensitive).
-gui.geom.VoipCallsDialog.maximized: FALSE
+gui.geom.VoipCallsDialog.height: 1025
+# true or false (case-insensitive).
+gui.geom.VoipCallsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.VoipCallsDialog.qt_geometry: 01d9d0cb0003000000000000000000000000027b0000040000000000000000000000027b0000040000000001000000000a0000000000000000000000027b00000400
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 0
+gui.geom.PacketDialog.y: 0
+gui.geom.PacketDialog.width: 1276
+gui.geom.PacketDialog.height: 1025
+# true or false (case-insensitive).
+gui.geom.PacketDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PacketDialog.qt_geometry: 01d9d0cb000300000000000000000000000004fb000004000000000000000000000004fb0000040000000001000000000a000000000000000000000004fb00000400
 
 # Geometry and maximized state of RtpPlayerDialog window.
 # Decimal integers.
 gui.geom.RtpPlayerDialog.x: 0
-gui.geom.RtpPlayerDialog.y: 1080
-gui.geom.RtpPlayerDialog.width: 1920
-gui.geom.RtpPlayerDialog.height: 1080
-# TRUE or FALSE (case-insensitive).
-gui.geom.RtpPlayerDialog.maximized: TRUE
+gui.geom.RtpPlayerDialog.y: 0
+gui.geom.RtpPlayerDialog.width: 508
+gui.geom.RtpPlayerDialog.height: 1025
+# true or false (case-insensitive).
+gui.geom.RtpPlayerDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.RtpPlayerDialog.qt_geometry: 01d9d0cb000300000000000000000000000001fb000004000000000000000000000001fb0000040000000001000000000a000000000000000000000001fb00000400
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.

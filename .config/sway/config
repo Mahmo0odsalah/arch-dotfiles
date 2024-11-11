@@ -19,7 +19,7 @@ set $down j
 set $up k
 set $right i
 # Your preferred terminal emulator
-set $term termite
+set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -215,7 +215,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Clipboard "clipman"
-bindsym $mod+shift+v exec "clipman pick -t wofi --err-on-no-selection && wtype -M ctrl -M shift v"
+bindsym $mod+shift+v exec "clipman pick -t wofi -T'-i -G -M=fuzzy' --err-on-no-selection && wtype -M ctrl -M shift v"
 
 # Brightness, Audio, Media
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%

@@ -29,3 +29,9 @@ autoload -Uz compinit
 # WORDCHARS='_'
 compinit
 # End of lines added by compinstall
+#
+alias lg="eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa"
+
+# Log pre-master SSL key
+export SSLKEYLOGFILE=~/.ssl-key.log
